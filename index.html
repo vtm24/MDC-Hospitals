@@ -18,7 +18,7 @@
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-       let url = https://hub.arcgis.com/api/v3/datasets/0067a0e8b40644f980afa23ad34c32c4_0/downloads/data?format=geojson&spatialRefId=4326&where=1%3D1
+       let url = 'https://hub.arcgis.com/api/v3/datasets/0067a0e8b40644f980afa23ad34c32c4_0/downloads/data?format=geojson&spatialRefId=4326&where=1%3D1
        const response = fetch(url).then(response => response.json()).then(response => {
       L.geoJson(response).addTo(map);
     })
